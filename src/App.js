@@ -1,6 +1,9 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 import './index.css';
+import About from "./components/aboutMe";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 const anchors = ["firstPage", "secondPage", "thirdPage"];
 
@@ -19,9 +22,9 @@ const App = () => (
 
       return (
         <div>
-          <div className="section"><h3>Section 1</h3></div>
-          <div className="section"><h3>Section 2</h3></div>
-          <div className="section"><h3>Section 3</h3></div>
+          <About/>
+          <Projects/>
+          <Contact/>
         </div>
       );
     }}
